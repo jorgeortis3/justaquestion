@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>justaquestion</title>
+    <link rel="stylesheet" href="style.scss">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .contenedor {
+            background-color: purple;
+            height: 1000px;
+            background-image: url('tulipan.jpg');
+            background-size: auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+    color: black;
+    height: 10px;
+}
+    </style> 
+    </body>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('Nooowww you finally my giiirlllllll <3');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>Wanna be my girlfriend?</h1>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+    <img src="chuec.png" width="300">
+</div>
+</body>
+</html>
+
